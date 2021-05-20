@@ -1,0 +1,22 @@
+[client-server]
+port = 3306
+socket=/run/mysqld/mysql.sock
+
+[mysqld]
+
+user = mysql # command line equivalent: --user=<user>
+
+bind-address = 0.0.0.0
+
+max_allowed_packet=500M
+
+
+log-bin=bin_log
+
+log-basename=mysql_log_
+
+
+general_log #since the log-basename is set: mysql_log_.log will be created
+
+
+[mysql]

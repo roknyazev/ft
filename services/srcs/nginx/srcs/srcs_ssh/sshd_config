@@ -1,0 +1,12 @@
+
+SyslogFacility AUTH
+LogLevel INFO
+PermitRootLogin prohibit-password
+PubkeyAuthentication yes
+AuthorizedKeysFile	.ssh/authorized_keys
+PasswordAuthentication no
+AllowTcpForwarding no
+GatewayPorts no
+X11Forwarding no
+Banner /tmp/ssh_banner
+Subsystem	sftp	/usr/lib/ssh/sftp-server
